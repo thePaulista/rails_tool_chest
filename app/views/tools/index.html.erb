@@ -1,0 +1,6 @@
+<%= link_to "Tool Index", tools_path %>
+
+<%= @tools.each do |tool| %>
+  <%= tool.name %> - <%= tool.quantity %>
+<% end %>
+
