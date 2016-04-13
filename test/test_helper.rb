@@ -15,7 +15,8 @@ end
 class ActionDispatch::IntegrationTest
   include Capybara::DSL
 
-  def create_tool
-    Tool.create(name: "nail", price: "1", quantity: 10)
+  def teardown
+    reset_session!
   end
+
 end
