@@ -1,6 +1,8 @@
-<%= link_to "Tool Index", tools_path %>
-
-<%= @tools.each do |tool| %>
+<h1><%= link_to "Tool Index", tools_path %></h1>
+<div class="tool_info">
+<% @tools.each do |tool| %>
+  <p>
   <%= tool.name %> - <%= tool.quantity %>
+  </p>
 <% end %>
-
+</div>
